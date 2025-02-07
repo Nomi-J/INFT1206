@@ -1,0 +1,134 @@
+<!--
+	Name: Noman
+	File: Mozilla splash
+	Date: 07-02-2025
+	
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mozilla Splash Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .video {
+      margin-bottom: 20px;
+    }
+
+    .further-info {
+      display: flex;
+      justify-content: space-between;
+      background-color: #d8342f;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    .further-info img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .red-panda {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .red-panda img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0078d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Mozilla</h1>
+    <img src="firefox_logo-only_RGB.png" alt="Firefox Logo">
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    <div class="video">
+      <h2>Rocking the free web</h2>
+      <iframe width="100%" height="315" 
+              src="https://www.youtube.com/embed/ojcNcvb1olg" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+      <p>
+        Mozilla is a global community of technologists, thinkers, and builders, working together to keep 
+        the Internet alive and accessible, so people worldwide can be informed contributors and creators 
+        of the Web. We believe this act of human collaboration across an open platform is essential to 
+        individual growth and our collective future.
+      </p>
+    </div>
+
+    <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="#">Red panda picture</a> by Mathias Appel.</p>
+
+    <!-- Further Info Section -->
+    <div class="further-info">
+      <a href="https://www.mozilla.org/en-US/firefox/new/">
+        <img src="firefox_logo-only_RGB.png" alt="Firefox">
+      </a>
+      <a href="https://www.mozilla.org/en-US/about/">
+        <img src="mozilla-dinosaur-head.png" alt="Mozilla Dinosaur">
+      </a>
+      <a href="https://www.mozilla.org/en-US/firefox/">
+        <img src="firefox-addons.jpg" alt="Firefox Add-ons">
+      </a>
+      <a href="https://developer.mozilla.org/">
+        <img src="mdn.svg" alt="MDN Web Docs">
+      </a>
+    </div>
+
+    <!-- Red Panda Section -->
+    <div class="red-panda">
+      <img src="red-panda.jpg" alt="Red Panda">
+    </div>
+  </div>
+
+</body>
+</html>
