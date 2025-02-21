@@ -1,66 +1,27 @@
-body {
-  font-family: sans-serif;
-}
-
-h1 {
-  color: hotpink; 
-  border-bottom: 10px dotted purple; 
-  font-family: Georgia, "Times New Roman", Times, serif; 
-  font-size: 2em;
-}
-
-h2 {
-  font-style: italic; 
-  font-size: 1.5em; 
-}
-
-ul.contact {
-  background-color: #eeeeee; 
-  border: 5px solid purple; 
-  padding: 10px; 
-}
-
-a {
-  color: blue; 
-  text-decoration: none; 
-}
-
-a:hover {
-  color: rgb(13, 128, 0); 
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-.job-title { 
-  color: #999999;
-  font-weight: bold;
-}
-
-ul.contact li {
-  list-style-type: disc;
-
-ul.contact li a {
-  color: #fb6542; 
-}
-
-ul.contact li a:hover {
-    color: rgb(128, 0, 0); 
-}
-
-ul.contact li a[href^="mailto:"] { 
-    color: green;
+html {
+    font-family: sans-serif;
   }
   
-  ul.contact li a[href^="http"] { /* Targets web links (http or https) */
-    color: red;
-  }
-  .email-link {
-    color: green;
-  }
+  div {
+    width: 200px;
+    height: 100px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
   
-  .web-link {
-    color: red;
-  }
+    margin: 50px auto; 
+  
+    font-size: 1.125rem; 
+    color: #f0f0f0; 
+    text-shadow: 0 0 2px black;
+  
+    background-color: #e74c3c; 
+    border-radius: 15px; 
+    border: 2px solid #c0392b;; 
+  
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2));
+  
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), 
+                inset 4px 4px 10px rgba(255, 255, 255, 0.5),
+                inset -4px -4px 10px rgba(0, 0, 0, 0.2); 
+}
