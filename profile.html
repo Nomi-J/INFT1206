@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queen Elsa's Instagram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Courgette', cursive;
+            background: linear-gradient(135deg, #a8d0e6, #e0f4ff, #f0f8ff);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .profile {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(135, 206, 250, 0.3);
+            backdrop-filter: blur(5px);
+            border: 2px solid #e0f4ff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, #e0f4ff 50%, transparent);
+            animation: snowGlow 8s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes snowGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #e0f4ff;
+            box-shadow: 0 0 20px #a8d0e6;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        .stats {
+            display: flex;
+            gap: 25px;
+            font-size: 18px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(224, 244, 255, 0.3);
+        }
+
+        .bio {
+            margin: 20px 0;
+            color: #2c3e50;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            position: relative;
+        }
+
+        .bio::after {
+            content: '❄️';
+            position: absolute;
+            right: -10px;
+            top: -15px;
+            font-size: 24px;
+        }
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 25px;
+        }
+
+        .post-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid #e0f4ff;
+            filter: brightness(0.95);
+        }
+
+        .post-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(135, 206, 250, 0.4);
+            filter: brightness(1);
+        }
+
+        .highlights {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            justify-content: center;
+        }
+
+        .highlight {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #a8d0e6;
+            padding: 3px;
+            transition: transform 0.3s;
+            background: white;
+        }
+
+        .highlight:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #2c3e50;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(135, 206, 250, 0.3);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/10/Elsa-Frozen-Ice-Powers-Explained.jpg" class="profile-pic" alt="Queen Elsa">
+            <div>
+                <h1>❄️ Queen Elsa ❄️</h1>
+                <div class="stats">
+                    <div class="stat">
+                        <strong>25M</strong>
+                        <div>Followers</div>
+                    </div>
+                    <div class="stat">
+                        <strong>3</strong>
+                        <div>Following</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="bio">
+            The Snow Queen of Arendelle ❄️<br>
+            Let it go... into the unknown! 🌌<br>
+            Ice magic • Northern Lights • Sister love<br>
+            👑 Official Royal Account 👑
+        </div>
+
+        <!-- Story Highlights -->
+        <div class="highlights">
+            <div class="highlight"><img src="https://i.ytimg.com/vi/YzeIsQLlocY/maxresdefault.jpg" style="border-radius: 50%;"></div>
+            <div class="highlight"><img src="https://m.media-amazon.com/images/I/51B7anIWPwL._AC_UF894,1000_QL80_.jpg" style="border-radius: 50%;"></div>
+            <div class="highlight"><img src="https://cdn.europosters.eu/image/750/wall-murals/disney-frozen-elsa-i35470.jpg" style="border-radius: 50%;"></div>
+        </div>
+
+        <!-- Posts Grid -->
+        <div class="posts">
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/04/disney-s-frozen-queen-elsa-1-1.jpg" class="post-img">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/ct_frozen_elsa_18466_22a50822_ad6090d1.jpeg?region=0%2C0%2C600%2C600" class="post-img">
+            <img src="https://images.ad.nl/MGI2M2I3OGFjNzVlYzI0YTY3NjcvZGlvLzQ5ODM0NzQyL2ZpdC13aWR0aC82OTQ/elsa-uit-frozen" class="post-img">
+            <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/13010/production/_88204877_frozen2.jpg" class="post-img">
+            <img src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19399180/elsainfall.jpg?quality=90&strip=all&crop=10.009375%2C0%2C79.98125%2C100&w=1200" class="post-img">
+            <img src="https://nld.mediacdn.vn/thumb_w/698/2015/1-ap-frozen-mar-140616-16x9-992-1424410518452.jpg" class="post-img">
+        </div>
+    </div>
+</body>
+</html>
