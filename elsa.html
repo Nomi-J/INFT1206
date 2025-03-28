@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsa Character Poster</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #051d40, #3a6ec7);
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: 
+                linear-gradient(to bottom, #051d40, #3a6ec7),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M50 15 L50 85 M15 50 L85 50 M25 25 L75 75 M25 75 L75 25' stroke='%23ffffff' stroke-width='1' stroke-opacity='0.2' /%3E%3C/svg%3E");
+            background-blend-mode: normal;
+        }
+        
+        .poster {
+            max-width: 800px;
+            min-height: 1100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-section {
+            background-color: rgba(5, 29, 64, 0.7);
+            padding: 20px 40px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 60px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        
+        .name {
+            font-size: 80px;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-style: italic;
+            margin: 10px 0 30px 0;
+        }
+        
+        .image-container {
+            width: 450px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .section {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+        
+        .personality {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        
+        .values-fears {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .value-fear-box {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            position: relative;
+            padding-top: 20px;
+        }
+        
+        .quote::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 25%;
+            right: 25%;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+        }
+        
+        .trait {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .frost-border {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+        }
+        
+        .frost-top {
+            top: 0;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.8), transparent);
+        }
+        
+        .frost-bottom {
+            bottom: 0;
+            background: linear-gradient(to top, rgba(255,255,255,0.8), transparent);
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="frost-border frost-top"></div>
+        
+        <div class="title-section">
+            <h1>INTRODUCING</h1>
+            <h1 class="name">ELSA</h1>
+        </div>
+        <h2>THE SNOW QUEEN OF ARENDELLE</h2>
+        
+        <div class="image-container">
+            <!-- Replaced with your provided image URL -->
+            <img src="https://i.guim.co.uk/img/media/fcf3d31f6631c127a30df753728eabca4c619755/0_503_1747_1048/master/1747.jpg?width=1200&quality=85&auto=format&fit=max&s=652aba07b3a3978686b309859f054e02" alt="Elsa from Frozen" />
+        </div>
+        
+        <div class="section">
+            <h3>PERSONALITY</h3>
+            <div class="personality">
+                <span class="trait">RESILIENT</span>
+                <span class="trait">PROTECTIVE</span>
+                <span class="trait">EMPOWERED</span>
+            </div>
+        </div>
+        
+        <div class="values-fears">
+            <div class="value-fear-box">
+                <h3>VALUES</h3>
+                <p>Her sister Anna and their bond</p>
+                <p>Freedom to be her authentic self</p>
+            </div>
+            
+            <div class="value-fear-box">
+                <h3>FEARS</h3>
+                <p>Hurting those she loves with her powers</p>
+                <p>Being viewed as a monster</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>IMPACT ON OTHERS</h3>
+            <p><em>Inspires both awe and transformation. Initially causes fear, but ultimately brings beauty, wonder, and joy to Arendelle through her controlled ice magic.</em></p>
+        </div>
+        
+        <div class="quote">
+            <p>"Let it go, let it go. Can't hold it back anymore. Let it go, let it go. Turn away and slam the door. I don't care what they're going to say. Let the storm rage on... the cold never bothered me anyway."</p>
+        </div>
+        
+        <div class="frost-border frost-bottom"></div>
+    </div>
+</body>
+</html>
