@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Bahar 🎉</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
+
+    body {
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      color: #4b2e44;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 4em;
+      margin-bottom: 0.2em;
+      color: #fff;
+      text-shadow: 2px 2px 6px #b24c72;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin-top: 0;
+      color: #ffd6e8;
+      text-shadow: 1px 1px 3px #b24c72;
+    }
+
+    .panda {
+      width: 220px;
+      margin: 30px auto;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .message {
+      font-size: 1.3em;
+      max-width: 480px;
+      margin: 20px auto 40px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px 30px;
+      border-radius: 20px;
+      color: #5a2d47;
+      box-shadow: 0 8px 15px rgba(182, 74, 108, 0.3);
+      line-height: 1.5;
+    }
+
+    .heart {
+      font-size: 3em;
+      color: #ff5370;
+      animation: pulse 1.8s infinite;
+      user-select: none;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); color: #ff5370; }
+      50% { transform: scale(1.2); color: #ff8aa0; }
+    }
+
+    /* Confetti animation */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: #ff66a3;
+      top: 0;
+      animation: fall 5s linear infinite;
+      opacity: 0.8;
+      border-radius: 3px;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday</h1>
+  <h2>BAHAR 🎉</h2>
+  <img class="panda" src="https://i.pinimg.com/736x/d4/4a/74/d44a744e44fcd03958bfe93ff985cc69.jpg" alt="Cute Panda" />
+  <div class="message">
+    Wishing you the sweetest day filled with joy, love, and endless smiles.<br />
+    Even from afar, you’re still the most special part of my heart. 🐼💖
+  </div>
+  <div class="heart">❤️❤️❤️</div>
+
+  <script>
+    // Create confetti pieces randomly
+    function createConfetti() {
+      const colors = ['#ff66a3', '#ff8aa0', '#ff3399', '#ffd6e8'];
+      for (let i = 0; i < 40; i++) {
+        let confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = Math.random() * window.innerWidth + 'px';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDelay = (Math.random() * 5) + 's';
+        confetti.style.width = confetti.style.height = (5 + Math.random() * 5) + 'px';
+        document.body.appendChild(confetti);
+
+        // Remove confetti after animation completes to keep DOM clean
+        setTimeout(() => confetti.remove(), 6000);
+      }
+    }
+
+    // Generate confetti every 2 seconds
+    setInterval(createConfetti, 2000);
+    createConfetti();
+  </script>
+
+</body>
+</html>
